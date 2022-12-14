@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://th.bing.com/th/id/R.070ba31ac2ae21ea9ff97c0591922831?rik=tWaqO2SYmna9CA&pid=ImgRaw&r=0);
+}
+
+.conteudo{
+    border: none;
+    margin: 20px;
+    background-color: rgba(255, 228, 196, 0.186);
+    box-shadow: 5px 5px 37px 17px #000000;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.conteudo h1, p{
+    padding: 20px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+input, button{
+    padding: 8px;
+    border: 2px solid rgba(90, 90, 83, 0.368);
+    border-radius: 20px;
+}
+
+input{
+    background-color: rgba(255, 228, 196, 0.342);
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+#resutado{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgba(238, 130, 238, 0.689);
+}

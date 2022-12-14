@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adivinhação</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="conteudo">
+        <header>
+            <h1>Jogo de adivinhação</h1>
+        </header>
+        <p>Adivinhe o número que estou pensando (1-10):</p>
+        <input type="number" id="euAcho" placeholder="digite um número">
+        <button onclick="adivinhar()">Fazer palpite</button>
+        <p id="resutado"></p>
+    </div>
+
+    <script>
+      function adivinhar() {
+        const number = Math.floor(Math.random() * 10) + 1;
+
+        const acho = document.getElementById("euAcho").value;
+
+        if (euAcho == number) {
+          document.getElementById("resutado").innerHTML =
+            "Parabéns, você acertou!";
+        } else {
+          document.getElementById("resutado").innerHTML =
+            "Você errou otário KAKAKA. O número era " + number;
+        }
+      }
+    </script>
+  </body>
+</html>
